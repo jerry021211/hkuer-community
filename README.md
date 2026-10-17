@@ -6,7 +6,7 @@
 
 > 当前定位为开发与演示项目。包含可运行的前后端、数据库迁移和测试；生产云服务、支付、真实课程数据及全部页面状态验收仍需单独完成。
 
-![求职详情页面预览](docs/images/community-preview.png)
+![课程库页面预览：课程筛选与课程卡片](docs/images/community-preview.png)
 
 ## 功能
 
@@ -75,7 +75,7 @@ git clone https://github.com/jerry021211/hkuer-community.git
 cd hkuer-community
 ```
 
-私有仓库需要对应 GitHub 账号权限。下面所有脚本均从仓库根目录运行。
+仓库公开可访问。下面所有脚本均从仓库根目录运行。
 
 ### 2. 初始化私有配置与数据库
 
