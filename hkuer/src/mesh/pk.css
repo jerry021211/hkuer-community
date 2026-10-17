@@ -1,0 +1,346 @@
+.mesh-app .pk-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 80;
+    background: #050a14;
+    color: #f8fafc;
+    overflow: auto;
+    font-family: inherit;
+}
+.mesh-app .pk-back {
+    position: fixed;
+    top: 24px;
+    left: 20px;
+    background: #111722;
+    color: #9da9b8;
+    border-radius: 12px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 31px;
+    z-index: 2;
+}
+.mesh-app .pk-onboarding {
+    max-width: 400px;
+    margin: 80px auto 40px;
+    text-align: center;
+}
+.mesh-app .pk-symbol {
+    background: linear-gradient(140deg, #162b42, #0b3832);
+    border-radius: 18px;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    font-size: 30px;
+    display: grid;
+    place-items: center;
+}
+.mesh-app .pk-screen h1 {
+    font-size: 24px;
+    font-weight: 750;
+    margin: 20px 0 6px;
+}
+.mesh-app .pk-screen p {
+    font-size: 13px;
+    color: #667085;
+}
+.mesh-app .pk-level {
+    width: 100%;
+    border-radius: 16px;
+    border: 2px solid #2a4161;
+    background: linear-gradient(130deg, #0c1931, #080e1d);
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px 24px;
+    margin-top: 40px;
+    min-height: 118px;
+}
+.mesh-app .pk-level.pg {
+    margin-top: 12px;
+    background: linear-gradient(130deg, #062322, #041216);
+    border-color: #18483e;
+}
+.mesh-app .pk-level strong {
+    display: block;
+    font-size: 18px;
+}
+.mesh-app .pk-level small,
+.mesh-app .pk-level em {
+    display: block;
+    color: #8a97a9;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 3px;
+}
+.mesh-app .pk-level em {
+    font-size: 12px;
+    color: #526178;
+    margin-top: 7px;
+}
+.mesh-app .pk-level b {
+    color: #6da1e7;
+    background: #11213b;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 12px;
+}
+.mesh-app .pk-level.pg b {
+    color: #4ac6a4;
+    background: #0b2a28;
+}
+.mesh-app .pk-footnote {
+    margin-top: 32px;
+    color: #465164;
+    font-size: 12px;
+}
+.mesh-app .pk-subjects {
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 20px;
+}
+.mesh-app .pk-subjects > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 32px;
+}
+.mesh-app .pk-subjects > div button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background: #101a2b;
+    border: 1px solid #25334b;
+    border-radius: 14px;
+    text-align: left;
+}
+.mesh-app .pk-subjects small {
+    color: #6b7a90;
+}
+.mesh-app .pk-change {
+    color: #93a3bb;
+}
+.mesh-app .pk-voting {
+    max-width: 520px;
+    margin: 40px auto;
+}
+.mesh-app .pk-progress {
+    color: #7b899d;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+.mesh-app .pk-progress span {
+    float: right;
+}
+.mesh-app .pk-swipe-card {
+    min-height: 520px;
+    background: linear-gradient(145deg, #0c2429, #102b30);
+    border: 1px solid #16393c;
+    border-radius: 28px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    touch-action: pan-y;
+}
+.mesh-app .pk-swipe-card h2 {
+    font-size: 25px;
+    line-height: 1.35;
+    font-weight: 750;
+    margin: 8px 0;
+}
+.mesh-app .pk-swipe-card > .row-between {
+    color: #b8cad5;
+    font-size: 13px;
+}
+.mesh-app .pk-swipe-card p {
+    color: #829ba8;
+}
+.mesh-app .pk-description {
+    display: block;
+    margin-top: 35px;
+    line-height: 1.8;
+    font-size: 14px;
+    color: #bac9cf;
+}
+.mesh-app .pk-card-bottom {
+    margin-top: auto;
+    padding-top: 30px;
+}
+.mesh-app .pk-card-bottom .ant-rate {
+    font-size: 30px;
+    margin: 10px 0;
+}
+.mesh-app .pk-counts {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #d98c8c;
+    margin: 20px 0 6px;
+}
+.mesh-app .pk-counts span:last-child {
+    color: #5dd0b6;
+}
+.mesh-app .pk-ratio {
+    height: 10px;
+    border-radius: 8px;
+    background: #793e42;
+    overflow: hidden;
+}
+.mesh-app .pk-ratio i {
+    display: block;
+    height: 100%;
+    background: #35b791;
+    margin-left: auto;
+}
+.mesh-app .pk-card-bottom > .row-between {
+    margin-top: 24px;
+    color: #9aafb9;
+}
+.mesh-app .pk-vote-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 20px 0;
+}
+.mesh-app .pk-vote-buttons button {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 1px solid #773438;
+    color: #ff6b72;
+    background: #29131c;
+    font-size: 40px;
+}
+.mesh-app .pk-vote-buttons button:last-child {
+    border-color: #237c69;
+    color: #51d9b4;
+    background: #0b2d29;
+}
+.mesh-app .pk-instructions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #607386;
+    font-size: 12px;
+    align-items: center;
+}
+.mesh-app .pk-instructions button {
+    font-size: 12px;
+}
+.mesh-app .pk-finished {
+    padding: 28px;
+    background: #101a2b;
+    border-radius: 24px;
+}
+.mesh-app .pk-finished h2 {
+    margin-top: 30px;
+}
+.mesh-app .pk-finished > a:not(.primary) {
+    display: flex;
+    gap: 12px;
+    padding: 16px 0;
+    border-bottom: 1px solid #223045;
+    font-size: 13px;
+}
+.mesh-app .pk-finished > a > span {
+    flex: 1;
+}
+.mesh-app .pk-finished > .primary {
+    display: inline-block;
+    margin-top: 24px;
+}
+.mesh-app .pk-help-shade {
+    position: fixed;
+    inset: 0;
+    background: #000b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 90;
+}
+.mesh-app .pk-help {
+    position: relative;
+    background: #111827;
+    border-radius: 28px;
+    padding: 26px 32px;
+    width: 410px;
+    max-width: 100%;
+}
+.mesh-app .pk-help h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.mesh-app .pk-help-close {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    color: #77849a;
+    font-size: 24px;
+}
+.mesh-app .pk-help-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 16px 0;
+}
+.mesh-app .pk-help-grid article {
+    background: #1f2937;
+    border-radius: 14px;
+    text-align: center;
+    padding: 14px 8px;
+}
+.mesh-app .pk-help-grid article span {
+    display: block;
+    font-size: 22px;
+}
+.mesh-app .pk-help-grid strong {
+    display: block;
+    font-size: 13px;
+}
+.mesh-app .pk-help-grid small {
+    display: block;
+    font-size: 10px;
+    color: #798497;
+}
+.mesh-app .pk-help-done {
+    background: #2a3442;
+    width: 100%;
+    border-radius: 12px;
+    font-weight: 600;
+    padding: 10px;
+}
+.mesh-app .pk-screen .error {
+    color: #fca5a5;
+    background: #401722;
+    margin: 20px 70px;
+}
+@media (max-width: 700px) {
+    .mesh-app .pk-onboarding {
+        margin: 80px 24px 24px;
+        max-width: none;
+    }
+    .mesh-app .pk-subjects > div {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .mesh-app .pk-voting {
+        margin: 70px 16px 24px;
+    }
+    .mesh-app .pk-swipe-card {
+        min-height: 480px;
+        padding: 22px;
+    }
+    .mesh-app .pk-help {
+        padding: 24px;
+    }
+    .mesh-app .pk-instructions {
+        gap: 8px;
+    }
+    .mesh-app .pk-subjects {
+        margin-top: 65px;
+    }
+}

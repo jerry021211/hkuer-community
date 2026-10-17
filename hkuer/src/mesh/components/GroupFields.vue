@@ -1,0 +1,9 @@
+<script setup lang="ts">
+import { ref, computed } from 'vue'
+import { message } from 'ant-design-vue'
+const props=defineProps<{form:{name:string;description:string;capacity:number;skills:string[];wechat:string;contactNote:string}}>()
+const skill=ref('')
+const capacities=computed(()=>[...new Set([2,3,4,5,6,8,10,props.form.capacity])].sort((a,b)=>a-b))
+function add(){const value=skill.value.trim();if(!value)return;if(props.form.skills.includes(value)){skill.value='';return}if(props.form.skills.length>=8){message.info('最多 8 个标签');return}props.form.skills.push(value);skill.value=''}
+</script>
+<template><div class="group-fields"><p class="muted group-form-intro">招募信息公开展示，联系方式仅队员可见</p><h4>公开招募信息</h4><label>队伍名称 <span class="required">*</span><input v-model="form.name" required maxlength="100" placeholder="例：COMP7404 项目组，找2-3人"/></label><label>招募说明<textarea v-model="form.description" rows="3" maxlength="300" placeholder="项目方向、期望背景、组队要求等…"/></label><div class="group-skill-field"><label>期望技能标签</label><div v-if="form.skills.length" class="selected-skills"><button v-for="item in form.skills" :key="item" type="button" :aria-label="'移除技能 '+item" @click="form.skills.splice(form.skills.indexOf(item),1)">{{item}} ×</button></div><div class="group-skill-add"><input v-model="skill" maxlength="20" placeholder="输入技能后回车添加，如 Python" @keydown.enter.prevent="add"/><button type="button" :disabled="!skill.trim()||form.skills.length>=8" @click="add">添加</button></div><small class="muted">最多8个标签</small></div><label>人数上限<select v-model.number="form.capacity"><option v-for="n in capacities" :key="n" :value="n">{{n}} 人</option></select></label><div class="group-private-fields"><h4>🔒 成员专属信息（加入后可见）</h4><label>你的微信号<input v-model="form.wechat" maxlength="50" placeholder="微信号，方便队员添加"/></label><label>微信群链接 / 说明<input v-model="form.contactNote" maxlength="200" placeholder="群链接或「先加我微信再拉群」等说明"/></label></div></div></template>
