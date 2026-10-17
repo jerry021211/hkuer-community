@@ -1,5 +1,7 @@
 # HKUer Community
 
+> 项目已拆分为两个独立公开仓库：[前端（含管理后台）](https://github.com/jerry021211/hkuer-frontend) · [后端（含数据库迁移与初始化）](https://github.com/jerry021211/hkuer-backend)。后续请使用各仓库的 README 和启动步骤；本合并版本保留作历史快照。
+
 一个面向校园交流的全栈社区项目，将问答、课程评价、求职信息、生活分享、二手交易和租房找室友整合到同一套账号与管理后台中。
 
 前端使用 **Vue 3 + TypeScript + Vite**，后端使用 **Java 21 + Spring Boot + MyBatis-Plus**，数据存储采用 **MySQL + Redis**。新社区界面参考 HKUmesh 的页面组织与交互，在原 HKUer 业务服务和管理后台上持续扩展。
